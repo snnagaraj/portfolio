@@ -131,8 +131,9 @@
 /* resume */
 
 .resume{
-    height: 450px;
-    background-color: aquamarine;
+    height: 700px;
+    margin-top: 50px;
+    /* background-color: rgb(231, 243, 239); */
 }
 .resume-head{
     padding-top: 50px;
@@ -158,33 +159,25 @@
 }
 .resume-flex{
     display: flex;
-    margin-top: 30px;
 }
-.box{
-    text-align: center;
-    box-shadow: 0 0 3px black;
-    width: 30%;
-    background-color: aliceblue;
-    border-radius: 5px;
-    height: 150px;
-    margin-left: 30px;
-    margin-bottom: 20px;
+.box1{
+    width: 40%;
 }
 .icon{
-    box-shadow: 0 0 3px blue;
+    width: 10%;
+    text-align: center;
+    margin-left: 60px;
+}
+.part{
+    margin-bottom: 150px;
+    box-shadow: 0 0 3px black;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: yellow;
-    color: white;
-    align-items: center;
-    margin-left: 175px;
-    margin-top: -30px;
-    padding-top: 10px;
+    margin-left: 40px;
 }
-.icon i{
-    font-size: 30px;
-    text-align: center;
+.box2{
+    width: 40%;
 }
 .skils-head h1{
     font-size: 30px;
@@ -208,10 +201,18 @@
     height: 150px;
     border-radius: 50%;
 }
+.image1 h2{
+    padding-top: 15px;
+    padding-left: 70px;
+}
 .image2 img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+.image2 h2{
+    padding-top: 15px;
+    padding-left: 60px;
 }
 .image3 img{
     width: 180px;
@@ -219,13 +220,24 @@
     border-radius: 50%;
     margin-top: -15px;
 }
+.image3 h2{
+    padding-left: 70px;
+}
 .image4 img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
+.image4 h2{
+    padding-top: 13px;
+    padding-left: 70px;
+}
 .image5 img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+.image5 h2{
+    padding-top: 13px;
+    padding-left: 70px;
 }

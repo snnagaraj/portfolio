@@ -6,6 +6,40 @@
 .container{
     width: 100%;
 }
+.profile{
+    background-color: #595D60;
+    height: 70px;
+}
+.profile-flex{
+    display: flex;
+}
+.profile-left{
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.profile-left a{
+    text-decoration: none;
+    color: white;
+}
+.profile-left h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Kaushan Script", cursive;
+}
+.profile-right{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 600px;
+}
+.profile-right a{
+    text-decoration: none;
+    color: white;
+}
+.profile-right li{
+    font-size: 20px;
+    list-style-type: none;
+    padding-left: 40px;
+}
 .bgimg{
     background-image: url(../cover_bg_3.jpg);
     position: relative;
@@ -15,12 +49,13 @@
 }
 .top{
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 70px;
+    /* bottom: 0; */
     left: 0;
     right: 0;
     background: rgba(255, 144, 0, 0.9);
     text-align: center;
+    height: 657px;
     padding-top: 150px;
 }
 .top img{
@@ -51,4 +86,146 @@
     font-weight: 400;
     font-size: 20px;
     padding-top: 50px;
+}
+.about-flex{
+    display: flex;
+}
+.about-left{
+    width: 40%;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 50px;
+    line-height: 40px;
+}
+.about-left span{
+    font-size: 20px;
+    color: #000;
+    font-family: "Space Mono", Arial, serif;
+    padding-right: 20px;
+    float: left;
+}
+.about-left h2{
+    font-family: "Space Mono", Arial, serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+.about-right{
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+.about-right h2{
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #000;
+    font-family: "Space Mono", Arial, serif;
+}
+.about-right p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #4d4d4d;
+    font-family: "Space Mono", Arial, serif;
+}
+
+
+/* resume */
+
+.resume{
+    height: 450px;
+    background-color: aquamarine;
+}
+.resume-head{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.resume-head h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.resume-head h4{
+    box-shadow: 0 0 0 0;
+    background: #595D60;
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    margin-left: 610px;
+    padding-top: 3px;
+    font-size: 20px;
+    color: white;
+}
+.resume-flex{
+    display: flex;
+    margin-top: 30px;
+}
+.box{
+    text-align: center;
+    box-shadow: 0 0 3px black;
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    height: 150px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.icon{
+    box-shadow: 0 0 3px blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: white;
+    align-items: center;
+    margin-left: 175px;
+    margin-top: -30px;
+    padding-top: 10px;
+}
+.icon i{
+    font-size: 30px;
+    text-align: center;
+}
+.skils-head h1{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+.skil-flex{
+    display: flex;
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.skil-flex img{
+    margin-left: 70px;
+}
+.skil-flex h2{
+    text-align: center;
+}
+.image1 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.image2 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.image3 img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: -15px;
+}
+.image4 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.image5 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }

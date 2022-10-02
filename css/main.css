@@ -56,7 +56,7 @@
     background: rgba(255, 144, 0, 0.9);
     text-align: center;
     height: 657px;
-    padding-top: 150px;
+    padding-top: 120px;
 }
 .top img{
     border-radius: 50%;
@@ -75,6 +75,18 @@
     color: aliceblue;
     font-family: "Space Mono", Arial, serif;
     padding-top: 30px;
+}
+.head-icon{
+    padding-top: 20px;
+    text-align: center;
+}
+.head-icon i{
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+}
+.head-icon i:hover{
+    color: rgb(20, 98, 187);
 }
 
 
@@ -133,7 +145,7 @@
 .resume{
     height: 700px;
     margin-top: 50px;
-    /* background-color: rgb(231, 243, 239); */
+    background-color: rgb(235, 198, 129);
 }
 .resume-head{
     padding-top: 50px;
@@ -162,6 +174,18 @@
 }
 .box1{
     width: 40%;
+    padding-left: 30px;
+}
+.text{
+    padding-top: 200px;
+}
+.text1{
+    text-align: right;
+    padding-left: 50px;
+}
+.text2{
+    text-align: right;
+    padding-top: 280px;
 }
 .icon{
     width: 10%;
@@ -171,14 +195,24 @@
 .part{
     margin-bottom: 150px;
     box-shadow: 0 0 3px black;
+    background-color:rgba(255, 144, 0, 0.9) ;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-left: 40px;
+    padding-top: 10px;
+}
+.part i{
+    font-size: 30px;
+    padding-top: 10px;
 }
 .box2{
     width: 40%;
 }
+
+
+
+/* skils */
 .skils-head h1{
     font-size: 30px;
     text-align: center;
@@ -240,4 +274,67 @@
 .image5 h2{
     padding-top: 13px;
     padding-left: 70px;
+}
+
+
+
+/* contact */
+
+.contact{
+    height: 400px;
+    background-color: aquamarine;
+    margin-top: 50px;
+}
+.contact-head{
+    text-align: center;
+    padding-top: 30px;
+}
+.contact-head h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact-flex{
+    display: flex;
+}
+.contact1{
+    box-shadow: 0 0 2px;
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 70px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+.contact1 h3{
+    font-size: 25px;
+}
+.c-icon{
+    box-shadow: 0 0 1px;
+    border: 2px solid blue;
+    color: blue;
+    padding-top: 8px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 160px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.c-icon i{
+    font-size: 20px;
+}
+
+
+
+
+.legel{
+    background-color: #595D60;
+    height: 100px;
+}
+.design{
+    text-align: center;
+    color: white;
+    padding-top: 45px;
 }

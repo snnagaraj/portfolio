@@ -1,141 +1,895 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-}
-.container{
-    width: 100%;
 }
 
-.banner{
-    padding-top: 1px;
+.container {
+    width: 95%;
 }
-.main{
-    display: flex;
-    justify-content: center;
-    background-color: #8ea69b;
+/* tittle */
+.tittle{
+    background-color: #4d4d4d;
 }
-.main img{
-    width: 170px;
-    height: 170px;
-    margin: 100px;
+nav{
+    height: 90px;
+    width: 100%;
 }
-.side{
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;    
+}
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 8px;
+    /* line-height: 80px; */
+    transform: translateY(-50px);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+nav #title-icon{
+    color: white;
+    font-size: 30px;
+    transform: translateY(-55px);
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:1024px){
+    h1.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media(max-width:768px){
+    nav #title-icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d4d;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+
+/* header */
+.bgimg {
+    background-image: url(../cover_bg_3.jpg);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.top {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    background: rgba(97, 128, 175, 0.9);
     text-align: center;
-    padding-top: 20px;
+    height: 500px;
+    padding-top: 120px;
 }
-.side h1{
-    font-size: 20px;
-    font-family: cursive;
+
+.top img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
-.side h4{
-    font-family: cursive;
-    font-size: 17px;
+
+.top h1 {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 200px;
+    font-size: 30px;
+    color: white;
+    transform: rotate(-5deg);
+}
+
+.top h3 {
+    font-size: 25px;
+    color: aliceblue;
+    font-family: "Space Mono", Arial, serif;
     padding-top: 10px;
 }
-.side li{
-    padding-top: 7px;
+
+.head-icon {
+    padding-top: 15px;
 }
-.icon{
-    margin-top: 20px;
+
+.head-icon a {
+    text-decoration: none;
+    color: white;
 }
-.icon i{
-    box-shadow: 0 0 0px;
-    border-radius: 50%;
-    background-color: #8ea69b;
+
+.head-icon i {
+    margin-left: 10px;
     font-size: 20px;
-    padding: 15px;
 }
-.icon a{
+
+.head-icon i:hover {
     color: black;
 }
-@media(min-width:1024px){
-    .container{
+
+@media(min-width:768px) {
+    .container {
+        width: 748px;
+    }
+
+    .bgimg {
+        background-image: url(../cover_bg_3.jpg);
+        position: relative;
+        overflow: hidden;
         width: 100%;
+        height: 657px;
     }
-    .banner-flex{
-        display: flex;
+
+    .top {
+        position: absolute;
+        top: 114px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 144, 0, 0.9);
+        text-align: center;
+        height: 657px;
+        padding-top: 160px;
     }
-    .main{
-        width: 40%;
+
+    .top img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
     }
-    .main img{
-        width: 200px;
-        height: 200px;
-        margin: 150px;
+
+    .top h1 {
+        font-family: "Kaushan Script", cursive;
+        font-weight: 200px;
+        font-size: 40px;
+        color: white;
+        transform: rotate(-5deg);
     }
-    .side{
-        width: 60%;
-        justify-content: right;
+
+    .top h3 {
+        font-size: 30px;
+        color: aliceblue;
+        font-family: "Space Mono", Arial, serif;
+        padding-top: 10px;
+    }
+
+    .head-icon {
+        padding-top: 15px;
+    }
+
+    .head-icon a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .head-icon i {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .head-icon i:hover {
+        color: black;
+    }
+}
+
+@media(min-width:1024px) {
+    .container {
+        width: 1000px;
+    }
+
+    .bgimg {
+        background-image: url(../cover_bg_3.jpg);
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 657px;
         
+    }
+
+    .top {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background: rgba(145, 145, 175, 0.9);
+        text-align: center;
+        height: 657px;
+        padding-top: 160px;
+    }
+
+    .top img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+    }
+
+    .top h1 {
+        font-family: "Kaushan Script", cursive;
+        font-weight: 200px;
+        font-size: 50px;
+        color: white;
+        transform: rotate(-5deg);
+    }
+
+    .top h3 {
+        font-size: 35px;
+        color: aliceblue;
+        font-family: "Space Mono", Arial, serif;
+        padding-top: 10px;
+    }
+
+    .head-icon {
+        padding-top: 15px;
+    }
+
+    .head-icon a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .head-icon i {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    .head-icon i:hover {
+        color: black;
     }
 }
 
 
 /* about */
+
 .about{
-    margin-top: 20px;
+    background: #fef8f5;
+    border-bottom: 2px solid #fcebe3;
 }
-.about-flex{
+.about-head {
+    text-align: center;
+    color: black;
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.about-flex {
+    padding-top: 1px;
+}
+
+.about-left {
+    width: 95%;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 30px;
+    line-height: 40px;
+}
+
+.about-left span {
+    font-size: 18px;
+    color: #000;
+    font-family: "Kaushan Script", cursive;
+    padding-right: 20px;
+    float: left;
+}
+
+.about-left h2 {
+    font-family: "Kaushan Script", cursive;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.about-right {
+    width: 95%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.about-right h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #000;
+    font-family: "Space Mono", Arial, serif;
+}
+
+.about-right p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #4d4d4d;
+    font-family: "Kaushan Script", cursive;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 98%;
+    }
+
+    .about-head {
+        text-align: center;
+        color: black;
+        font-family: cursive;
+        font-weight: 300;
+        font-size: 25px;
+        padding-top: 30px;
+    }
+
+    .about-flex {
+        padding-top: 1px;
+    }
+
+    .about-left {
+        width: 100%;
+        text-align: left;
+        padding-left: 120px;
+        padding-top: 30px;
+        line-height: 40px;
+    }
+
+    .about-left span {
+        font-size: 23px;
+        color: #000;
+        font-family: "Kaushan Script", cursive;
+        padding-right: 20px;
+        float: left;
+    }
+
+    .about-left h2 {
+        font-family: "Kaushan Script", cursive;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 25px;
+    }
+
+    .about-right {
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 120px;
+    }
+
+    .about-right h2 {
+        font-size: 25px;
+        padding-bottom: 20px;
+        color: #000;
+        font-family: "Space Mono", Arial, serif;
+    }
+
+    .about-right p {
+        font-size: 23px;
+        line-height: 30px;
+        color: #4d4d4d;
+        font-family: "Kaushan Script", cursive;
+    }
+}
+
+@media(min-width:1024px) {
+    .container {
+        width: 98%;
+    }
+
+    .about-head {
+        text-align: center;
+        color: black;
+        font-family: cursive;
+        font-weight: 400;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .about-flex {
+        display: flex;
+    }
+
+    .about-left {
+        width: 50%;
+        text-align: left;
+        padding-left: 80px;
+        padding-top: 50px;
+        line-height: 40px;
+    }
+
+    .about-left span {
+        font-size: 25px;
+        color: #000;
+        font-family: "Kaushan Script", cursive;
+        padding-right: 20px;
+        float: left;
+    }
+
+    .about-left h2 {
+        font-family: "Kaushan Script", cursive;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 25px;
+    }
+
+    .about-right {
+        width: 50%;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+    .about-right h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+        color: #000;
+        font-family: "Space Mono", Arial, serif;
+    }
+
+    .about-right p {
+        font-size: 25px;
+        line-height: 30px;
+        color: #4d4d4d;
+        font-family: "Kaushan Script", cursive;
+    }
+}
+
+/* portfolio */
+
+.port-head{
     text-align: center;
 }
-.about-flex h2{
+.port-head h1{
+    font-family: "Space Mono", Arial, serif;
+}
+.port-flex{
+    padding-top: 5px;
+}
+.port-box img{
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.port-box{
+    position: relative;
+}
+
+/* resume */
+
+.resume {
+    background-color: #f8f4ec;
+}
+
+.resume-head {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.resume-head h1 {
     font-size: 20px;
     font-family: cursive;
-    color: #8ea69b;
-    padding-bottom: 15px;
-    padding-top: 20px;
 }
-.about-flex p{
-    font-size: 17px;
-    font-family: cursive;
-    padding: 15px;
+
+.resume-head h4 {
+    font-size: 20px;
+    padding-top: 15px;
+    font-family: "Kaushan Script", cursive;
+}
+
+.resume-flex {
+    padding-top: 1px;
+}
+
+.box {
+    text-align: center;
+    align-items: center;
+}
+
+.box1 {
+    text-align: center;
+}
+
+.icon {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.icon i {
+    box-shadow: 0 0 1px;
+    border-radius: 50%;
+    background-color: rgb(241, 209, 101);
+    padding: 10px;
+    font-size: 30px;
+}
+.text h1, h3{
+    font-family: "Kaushan Script", cursive;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 98%;
+    }
+
+    .resume {
+        background-color: #f8f4ec;
+    }
+
+    .resume-head {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .resume-head h1 {
+        font-size: 25px;
+        font-family: cursive;
+    }
+
+    .resume-head h4 {
+        font-size: 25px;
+        padding-top: 15px;
+        font-family: "Kaushan Script", cursive;
+    }
+
+    .resume-flex {
+        padding-top: 1px;
+    }
+
+    .box {
+        text-align: center;
+        align-items: center;
+    }
+
+    .box1 {
+        text-align: center;
+    }
+
+    .icon {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .icon i {
+        box-shadow: 0 0 1px;
+        border-radius: 50%;
+        background-color: rgb(241, 209, 101);
+        padding: 10px;
+        font-size: 30px;
+    }
+    .text h1, h3{
+        font-family: "Kaushan Script", cursive;
+    }
+}
+
+@media(min-width:1024px) {
+    .container {
+        width: 98%;
+    }
+
+    .resume {
+        background-color: #f8f4ec;
+        height: 500px;
+    }
+
+    .resume-head {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .resume-head h1 {
+        font-size: 30px;
+        font-family: cursive;
+    }
+
+    .resume-head h4 {
+        font-size: 30px;
+        padding-top: 15px;
+        font-family: "Kaushan Script", cursive;
+    }
+
+    .resume-flex {
+        padding-top: 1px;
+    }
+
+    .split {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        padding-left: 40px;
+    }
+
+    .box1 {
+        text-align: center;
+        align-items: center;
+    }
+
+    .icon {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .icon i {
+        box-shadow: 0 0 1px;
+        border-radius: 50%;
+        background-color: rgb(241, 209, 101);
+        padding: 10px;
+        font-size: 30px;
+    }
+    .text h1, h3{
+        font-family: "Kaushan Script", cursive;
+    }
 }
 
 
-/* skils */
+/* skkils */
+.skils-head{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Kaushan Script", cursive;
+}
 .skil-flex{
     text-align: center;
 }
-.skil-flex h2{
-    font-size: 20px;
-    font-family: cursive;
-    color: #8ea69b;
-    padding-bottom: 15px;
-    padding-top: 20px;
+.skil-box{
+    box-shadow: 0 0 1px;
+    background-color: #fad9ab;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 30px;
 }
-.skil-flex h4{
-    padding-top: 10px;
-    font-family: cursive;
-}
-.skil-flex h4 i{
-    padding-right: 5px;
-}
-.skil-flex p{
-    font-family: cursive;
+.skil-box h2{
+    font-family: "Kaushan Script", cursive;
     padding: 10px;
 }
+.skil-box p{
+    font-family: "Kaushan Script", cursive;
+    padding: 10px;
+}
+@media(min-width:768px){
+    .container{
+        width: 90%;
+    }
+    .skil-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skil-box{
+        width: 45%;
+        margin-left: 20px;
+        box-shadow: 0 0 1px;
+        background-color: #fad9ab;
+        margin-top: 20px;
+        margin-left: 15px;
+        padding: 30px;
+    }
+}
+@media(min-width:1024px){
+    .container{
+        width: 90%;
+    }
+    .skil-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skil-box{
+        width: 30%;
+        margin-left: 20px;
+        box-shadow: 0 0 1px;
+        background-color: #fad9ab;
+        margin-top: 20px;
+        margin-left: 15px;
+        padding: 30px;
+    }
+}
 
-
-/* study */
-
-.study-flex{
+/* contact */
+.contact{
+    background-color: #ebeef0;
+    margin-top: 20px;
+}
+.contact-head{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Kaushan Script", cursive;
+}
+.contact-flex{
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
-.study-flex h2{
+.contact-box h2{
+    font-family: "Kaushan Script", cursive;
+}
+.contact-box p{
+    font-family: "Kaushan Script", cursive;
+}
+.address{
+    text-align: center;
+}
+.address h3{
+    font-family: "Kaushan Script", cursive;
+    padding-top: 15px;
+    color: #4d4d4d;
+}
+.address a{
+    color: #000;
+    font-family: "Kaushan Script", cursive;
+}
+@media(min-width:768px){
+    .container{
+        width: 90%;
+    }
+    .contact-flex{
+        display: flex;
+    }
+    .contact-box{
+        width: 45%;
+        text-align: left;
+        padding-left: 80px;
+        padding-top: 35px;
+    }
+    .address{
+        width: 45%;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+}
+@media(min-width:1024px){
+    .container{
+        width: 90%;
+    }
+    .contact-flex{
+        display: flex;
+    }
+    .contact-box{
+        width: 45%;
+        text-align: left;
+        padding-left: 80px;
+        padding-top: 35px;
+    }
+    .address{
+        text-align: left;
+        width: 45%;
+        padding-top: 20px;
+        padding-left: 300px;
+        padding-bottom: 30px;
+    }
+}
+
+
+/* chat */
+.chat{
+    background-color: #fad9ab;
+    height: 300px;
+}
+.chat-flex{
+    text-align: center;
+    padding-top: 100px;
+}
+.chat-flex h1{
+    font-size: 30px;
+    font-family: "Kaushan Script", cursive;
+}
+.chat-flex button{
     font-size: 20px;
-    font-family: cursive;
-    color: #8ea69b;
-    padding-bottom: 15px;
-    padding-top: 20px;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #ec961c;
+    border: none;
+    color: white;
 }
-.study-flex h4{
-    padding-top: 10px;
-    font-family: cursive;
+@media(min-width:768px){
+    .container{
+        width: 98%;
+    }
+    .chat{
+        background-color: #fad9ab;
+        height: 300px;
+    }
+    .chat-flex{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .chat-flex h1{
+        font-size: 40px;
+        font-family: "Kaushan Script", cursive;
+    }
+    .chat-flex button{
+        font-size: 20px;
+        width: 120px;
+        height: 35px;
+        border-radius: 20px;
+        margin-top: 20px;
+        background-color: #ec961c;
+        border: none;
+        color: white;
+    }
 }
-.study-flex p{
-    font-family: cursive;
-    padding-top: 10px;
+@media(min-width:1024px){
+    .container{
+        width: 98%;
+    }
+    .chat{
+        background-color: #fad9ab;
+        height: 300px;
+    }
+    .chat-flex{
+        text-align: center;
+        padding-top: 100px;
+    }
+    .chat-flex h1{
+        font-size: 50px;
+        font-family: "Kaushan Script", cursive;
+    }
+    .chat-flex button{
+        font-size: 20px;
+        width: 120px;
+        height: 35px;
+        border-radius: 20px;
+        margin-top: 20px;
+        background-color: #ec961c;
+        border: none;
+        color: white;
+    }
+}
+
+
+/* legel */
+
+.legel{
+    background-color: #4d4d4d;
+    height: 100px;
+}
+.design{
+    text-align: center;
+    padding-top: 30px;
+}
+.design p{
+    color: white;
+    font-family: "Kaushan Script", cursive;
+}
+.design h3{
+    color: white;
+    padding-top: 5px;
+    font-family: "Kaushan Script", cursive;
 }

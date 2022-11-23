@@ -110,12 +110,12 @@ nav #title-icon{
     position: relative;
     overflow: hidden;
     width: 100%;
+    /* bottom: 24px; */
     height: 500px;
 }
-
 .top {
     position: absolute;
-    top: 90px;
+    top: 114px;
     left: 0;
     right: 0;
     background: rgba(97, 128, 175, 0.9);
@@ -167,7 +167,9 @@ nav #title-icon{
     .container {
         width: 748px;
     }
-
+    .header{
+        height: 644px;
+    }
     .bgimg {
         background-image: url(../images/download.jpg);
         position: relative;
@@ -178,7 +180,7 @@ nav #title-icon{
 
     .top {
         position: absolute;
-        top: 114px;
+        top: 100px;
         left: 0;
         right: 0;
         background: rgba(97, 128, 175, 0.9);
@@ -231,7 +233,9 @@ nav #title-icon{
     .container {
         width: 1000px;
     }
-
+    .header{
+        height: 644px;
+    }
     .bgimg {
         background-image: url(../images/download.jpg);
         position: relative;
@@ -243,7 +247,7 @@ nav #title-icon{
 
     .top {
         position: absolute;
-        top: 90px;
+        top: 101px;
         left: 0;
         right: 0;
         background: rgba(97, 128, 175, 0.9);
@@ -383,14 +387,13 @@ nav #title-icon{
     }
 
     .about-flex {
-        padding-top: 1px;
-        padding-bottom: 30px;
+        padding: 30px;
     }
 
     .about-left {
         width: 100%;
         text-align: left;
-        padding-left: 120px;
+        padding-left: 80px;
         padding-top: 30px;
         line-height: 40px;
     }
@@ -412,7 +415,7 @@ nav #title-icon{
     .about-right {
         width: 100%;
         padding-top: 50px;
-        padding-left: 120px;
+        padding-left: 80px;
     }
 
     .about-right h2 {
@@ -508,17 +511,17 @@ nav #title-icon{
 }
 .port-flex{
     padding-top: 5px;
+    justify-content: space-evenly;
 }
 .port-box{
-    justify-content: space-evenly;
+    width: 100%;
     text-align: center;
 }
 .port-box img{
-    width: 300px;
+    width: 90%;
     position: relative;
     /* margin-left: 70px; */
     margin-top: 20px;
-    justify-content: space-evenly;
 }
 .port-box h1{
     position: absolute;
@@ -539,12 +542,38 @@ nav #title-icon{
     .port-flex{
         padding-top: 5px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .port-box{
+        width: 45%;
     }
     .port-box img{
+        width: 100%;
+    }
+}
+@media(min-width:1024px){
+    .container{
         width: 90%;
+    }
+    .port-head{
+        text-align: center;
+    }
+    .port-head h1{
+        font-size: 30px;
+        font-family: "Kaushan Script", cursive;   
+    }
+    .port-flex{
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        /* margin-left: 20px; */
-        margin-top: 20px;
+    }
+    .port-box{
+        width: 30%;
+    }
+    .port-box img{
+        width: 100%;
     }
 }
 
@@ -574,6 +603,7 @@ nav #title-icon{
 .resume-flex {
     padding-top: 1px;
     padding-bottom: 30px;
+    justify-content: space-evenly;
 }
 
 .box {
@@ -630,6 +660,7 @@ nav #title-icon{
     .resume-flex {
         padding-top: 1px;
         padding-bottom: 30px;
+        justify-content: space-evenly;
     }
 
     .box {
@@ -687,6 +718,7 @@ nav #title-icon{
     .resume-flex {
         padding-top: 1px;
         padding-bottom: 30px;
+        justify-content: space-evenly;
     }
 
     .split {
@@ -730,14 +762,14 @@ nav #title-icon{
 }
 .skil-flex{
     text-align: center;
+    justify-content: space-evenly;
 }
 .skil-box{
-    background-color: #fafeff;
+    background-color: #8e9192;
     box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
     border-radius: 15px;
     border-bottom: 3px solid #fff;
     text-align: center;
-    justify-content: space-evenly;
     margin-top: 20px;
     margin-left: 15px;
     padding: 30px;
@@ -745,7 +777,7 @@ nav #title-icon{
 .skil-box h2{
     font-family: "Kaushan Script", cursive;
     padding: 10px;
-    color: #4d4d4d;
+    color: white;
 }
 .skil-box p{
     font-family: "Kaushan Script", cursive;
@@ -758,40 +790,59 @@ nav #title-icon{
     .skil-flex{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .skils-head h1{
+        font-size: 25px;
     }
     .skil-box{
         width: 45%;
-        margin-left: 20px;
-        justify-content: space-evenly;
-        background-color: #fafeff;
+        background-color: #8e9192;
         box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
         border-radius: 15px;
         border-bottom: 3px solid #fff;
         margin-top: 20px;
-        margin-left: 15px;
         padding: 30px;
+    }
+    .skil-box h2{
+        font-family: "Kaushan Script", cursive;
+        padding: 10px;
+        color: white;
+    }
+    .skil-box p{
+        font-family: "Kaushan Script", cursive;
+        padding: 10px;
     }
 }
 @media(min-width:1024px){
     .container{
         width: 90%;
     }
+    .skils-head h1{
+        font-size: 30px;
+    }
     .skil-flex{
         display: flex;
         flex-wrap: wrap;
-        margin-left: 60px;
+        justify-content: space-evenly;
     }
     .skil-box{
         width: 30%;
-        margin-left: 60px;
-        justify-content: space-evenly;
-        background-color: #fafeff;
+        background-color: #8e9192;
         box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
         border-radius: 15px;
         border-bottom: 3px solid #fff;
         margin-top: 20px;
-        margin-left: 15px;
         padding: 30px;
+    }
+    .skil-box h2{
+        font-family: "Kaushan Script", cursive;
+        padding: 10px;
+        color: white;
+    }
+    .skil-box p{
+        font-family: "Kaushan Script", cursive;
+        padding: 10px;
     }
 }
 

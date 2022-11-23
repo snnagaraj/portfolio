@@ -8,14 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/icofont.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <section class="tittle">
         <div class="container">
-            <div class="tittle-flex">
+            <div class="tittle-flex" data-aos="fade-right">
                 <nav>
-                    <h1 class="logo">NAGA</h1>
+                    <h1 class="logo">PORTFOLIO</h1>
                     <ul>
                         <li><a class="active" href="#">Home</a></li>
                         <li><a href="#about-section">About</a></li>
@@ -35,7 +36,7 @@
         <div class="bgimg"></div>
         <div class="container">
             <div class="head-flex">
-                <div class="top">
+                <div class="top" data-aos="fade-left">
                     <img src="images/naga-1.jpg" alt="man" />
                     <h1>-S.Nagarajan-</h1>
                     <h3>Web Developer</h3>
@@ -55,7 +56,7 @@
                 <h2>About Me</h2>
                 <hr>
             </div>
-            <div class="about-flex">
+            <div class="about-flex" data-aos="fade-right">
                 <div class="about-left">
                     <h2><span>Full Name:</span>S.Nagarajan</h2>
                     <h2><span>Phone:</span>9790376519</h2>
@@ -88,7 +89,7 @@
                 <h1>Portfolio</h1>
                 <hr>
             </div>
-            <div class="port-flex">
+            <div class="port-flex" data-aos="fade-left">
                 <div class="port-box">
                 <img src="images/features-1.jpg" alt="port">
                 <h1>Project-1</h1>
@@ -113,7 +114,7 @@
                 <hr>
                 <h4>Education</h4>
             </div>
-            <div class="resume-flex">
+            <div class="resume-flex" data-aos="fade-right">
                 <div class="split">
                 <div class="box">
                     <div class="icon"><i class="icofont-graduate"></i></div>
@@ -154,7 +155,7 @@
                 <h1>Skils</h1>
                 <hr>
             </div>
-            <div class="skil-flex">
+            <div class="skil-flex" data-aos="fade-left">
                 <div class="skil-box">
                     <h2>HTML</h2>
                     <p>html-5 this language has the environ tothe relevent of thjen the even putbin to html.</p>
@@ -190,7 +191,7 @@
                 <h1>CONTACT</h1>
                 <hr>
             </div>
-            <div class="contact-flex">
+            <div class="contact-flex" data-aos="fade-right">
                 <div class="contact-box">
                     <h2>Contact Me</h2>
                     <p>so we can create creative projects together.</p>
@@ -215,7 +216,7 @@
     <!--chat start-->
     <section class="chat">
         <div class="container">
-            <div class="chat-flex">
+            <div class="chat-flex" data-aos="fade-left">
                 <h1>Hire Me!</h1>
                 <button>Chat</button>
             </div>
@@ -233,5 +234,10 @@
     </section>
     <!--legel ends-->
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
